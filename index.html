@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Biblioteca Virtual</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 bg-dark" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="#home">📚 Biblioteca Virtual</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+          <li class="nav-item d-none" id="nav-painel"><a class="nav-link" href="#painel">Painel</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tela inicial -->
+  <header class="masthead" id="home">
+    <div class="container px-4 px-lg-5 h-100">
+      <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-8 align-self-end">
+          <h1 class="text-white font-weight-bold">Bem-vindo à Biblioteca Virtual</h1>
+          <hr class="divider" />
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 mb-5">Explore um acervo incrível de livros online!</p>
+          <a class="btn btn-primary btn-xl" href="#about">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sobre -->
+  <section class="page-section bg-primary text-white" id="about">
+    <div class="container px-4 px-lg-5 text-center">
+      <h2 class="mt-0">Sobre a Biblioteca</h2>
+      <hr class="divider divider-light" />
+      <p class="mb-4">Nossa biblioteca digital oferece acesso a centenas de títulos, de clássicos a lançamentos. A missão é democratizar o acesso ao conhecimento e à leitura.</p>
+    </div>
+  </section>
+
+  <!-- Login -->
+  <section class="page-section" id="login">
+    <div class="container px-4 px-lg-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h2 class="text-center">Login</h2>
+          <hr class="divider" />
+          <form id="loginForm">
+            <div class="form-floating mb-3">
+              <input class="form-control" id="email" type="email" placeholder="nome@email.com" required />
+              <label for="email">E-mail</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input class="form-control" id="senha" type="password" placeholder="Senha" required />
+              <label for="senha">Senha</label>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-primary btn-xl" type="submit">Entrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Painel -->
+  <section class="page-section bg-light d-none" id="painel">
+    <div class="container px-4 px-lg-5 text-center">
+      <h2 class="mt-0">Painel do Usuário</h2>
+      <hr class="divider" />
+      <p class="text-muted">Bem-vindo ao seu painel. Aqui você pode gerenciar seus livros favoritos.</p>
+      <div class="row gx-4 gx-lg-5">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">📖 Meus Livros</h5>
+              <p class="card-text">Veja sua lista de leitura.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">⭐ Favoritos</h5>
+              <p class="card-text">Gerencie seus livros favoritos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">🚪 Sair</h5>
+              <button class="btn btn-danger" id="btnLogout">Logout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark py-5">
+    <div class="container px-4 px-lg-5">
+      <div class="small text-center text-white">Copyright &copy; 2025 - Biblioteca Virtual</div>
+    </div>
+
